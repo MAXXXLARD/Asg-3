@@ -1,4 +1,6 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Employee()
-numComments=1
+comment1.params=empName\ empNum\ depart\ type
+comment1.target=Employee(java.lang.String,\ java.lang.String,\ java.lang.String,\ char)
+numComments=2

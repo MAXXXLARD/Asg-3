@@ -1,2 +1,6 @@
 #BlueJ class context
-numComments=0
+comment0.params=
+comment0.target=Hourly()
+comment1.params=pRate\ hWrk
+comment1.target=Hourly(double,\ double)
+numComments=2

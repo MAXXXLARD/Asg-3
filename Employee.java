@@ -9,4 +9,9 @@ public class Employee
     {
         
     }
+    
+    public Employee (String empName, String empNum, String depart, char type)
+    {
+        
+    }
 }
