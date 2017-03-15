@@ -1,6 +1,10 @@
 #BlueJ class context
+<<<<<<< HEAD
 comment0.params=
 comment0.target=Hourly()
 comment1.params=pRate\ hWrk
 comment1.target=Hourly(double,\ double)
 numComments=2
+=======
+numComments=0
+>>>>>>> Max-Branch

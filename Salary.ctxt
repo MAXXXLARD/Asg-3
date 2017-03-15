@@ -1,2 +1,12 @@
 #BlueJ class context
+<<<<<<< HEAD
 numComments=0
+=======
+comment0.params=
+comment0.target=Salary()
+comment1.params=ySal
+comment1.target=Salary(double)
+comment2.params=
+comment2.target=double\ getYearlySalary()
+numComments=3
+>>>>>>> Max-Branch
