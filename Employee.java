@@ -14,9 +14,9 @@ public class Employee
     public Employee (String eName, String eNum, String dept, char t)
     {
         empName = eName;
-        eNum = empNum;
-        dept = department;
-        t = type;
+        empNum = eNum;
+        department = dept;
+        type = t;
     }
 
     public String getName()
