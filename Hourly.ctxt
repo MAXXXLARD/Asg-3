@@ -1,2 +1,8 @@
 #BlueJ class context
-numComments=0
+comment0.params=
+comment0.target=Hourly()
+comment1.params=hPay\ wHours
+comment1.target=Hourly(double,\ int)
+comment2.params=
+comment2.target=double\ getHourlyPay()
+numComments=3

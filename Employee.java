@@ -5,27 +5,52 @@ public class Employee
     protected String empNum;
     protected String department;
     protected char type;
-    
+
     public Employee()
     {
-        
+
     }
-    
-    public Employee (String name, String eNum, String dep, char t)
+
+    public Employee (String eName, String eNum, String dept, char t)
     {
-        empName = name;
+        empName = eName;
         eNum = empNum;
-        dep = department;
+        dept = department;
         t = type;
     }
-    
+
     public String getName()
     {
         return empName;
     }
-    
+
     public void setName(String name)
     {
         empName = name;
+    }
+
+    public String getNum()
+    {
+        return empNum;
+    }
+
+    public void setNum(String num)
+    {
+        empNum = num;
+    }
+
+    public String getDep()
+    {
+        return department;
+    }
+    
+    public void setDep(String dep)
+    {
+        department = dep;
+    }
+    
+    public char getType()
+    {
+        return type;
     }
 }
