@@ -1,7 +1,7 @@
 
 public class Salary extends Employee
 {
-    double yearlySal;
+    private double yearlySal;
     
     public Salary()
     {
