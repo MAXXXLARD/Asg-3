@@ -1,14 +1,12 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Hourly()
-<<<<<<< HEAD
 comment1.params=pRate\ hWrk
 comment1.target=Hourly(double,\ double)
-numComments=2
-=======
-comment1.params=hPay\ wHours
-comment1.target=Hourly(double,\ int)
-comment2.params=
-comment2.target=double\ getHourlyPay()
-numComments=3
->>>>>>> Max-Branch
+comment2.params=hPay\ wHours
+comment2.target=Hourly(double,\ int)
+comment3.params=
+comment3.target=double\ getHourlyPay()
+comment4.params=
+comment4.target=double\ getWeeklyHours()
+numComments=5
