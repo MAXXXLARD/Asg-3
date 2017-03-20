@@ -1,11 +1,6 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Employee()
-<<<<<<< HEAD
-comment1.params=empName\ empNum\ depart\ type
-comment1.target=Employee(java.lang.String,\ java.lang.String,\ java.lang.String,\ char)
-numComments=2
-=======
 comment1.params=name\ eNum\ dep\ t
 comment1.target=Employee(java.lang.String,\ java.lang.String,\ java.lang.String,\ char)
 comment2.params=
@@ -13,4 +8,3 @@ comment2.target=java.lang.String\ getName()
 comment3.params=name
 comment3.target=void\ setName(java.lang.String)
 numComments=4
->>>>>>> Max-Branch
