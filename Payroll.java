@@ -31,6 +31,7 @@ public class Payroll extends Employee
             temp = fileInput.next();
             type = temp.charAt(0);
 
+<<<<<<< HEAD
             if (type == 'H')
             {
                 hRate = fileInput.nextDouble();
@@ -52,6 +53,10 @@ public class Payroll extends Employee
 
             }
 
+=======
+            Employee e1 = new Employee(empName, empNum, dep, type);
+            Employees.add(e1);
+>>>>>>> Max-Branch
         }
         fileInput.close();
     }
