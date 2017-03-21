@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Commission()
+comment1.params=tWeeks\ bSal\ wSales\ sLessWeekly\ cRate
+comment1.target=Commission(int,\ double,\ double,\ double,\ double)
+numComments=2

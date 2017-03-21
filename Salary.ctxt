@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Salary()
+comment1.params=ySal
+comment1.target=Salary(double)
+comment2.params=
+comment2.target=double\ getYearlySalary()
+comment3.params=yearSal
+comment3.target=void\ setYearlySalary(double)
+comment4.params=
+comment4.target=double\ calcYearlySalary()
+numComments=5
