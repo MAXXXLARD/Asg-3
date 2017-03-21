@@ -106,7 +106,7 @@ public class Commission extends Employee
         return weeklySal;
     }
     
-    // Top Seller 
+    
     public boolean topSeller()
     {
         boolean top = false;
@@ -115,8 +115,9 @@ public class Commission extends Employee
         aveSales = (yearSales + weekSales) / (numWeeks + 1.0);
         
         if (aveSales >= 1500)
+        {
             top = true;
-            
+        }
         return top;
         
     }
@@ -139,7 +140,7 @@ public class Commission extends Employee
     
     public void writeData(PrintWriter out) throws IOException
     {   
-        //super.writeData(out);
+        super.writeData(out);
         out.print (numWeeks + " " + baseSal + " " + weekSales + " " + yearSales + " " + commRate); 
         out.println();
     }

@@ -1,60 +1,146 @@
+import java.io.*;
+
 public class Employee
 {
-
-    protected String empName;
-    protected String empNum;
+    protected String name;
+    protected String empNo;
     protected String department;
     protected char type;
 
-
+    
     public Employee()
     {
-
+        name = "";
+        empNo = "";
+        department = "";
+        type = ' ';
     }
 
-
-    public Employee (String eName, String eNum, String dept, char t)
-
+    public Employee (String name, String empNum, String dept, char t )
     {
-        empName = eName;
-        empNum = eNum;
+        this.name = name;
+        this.empNo = empNum;
         department = dept;
         type = t;
     }
 
+    
     public String getName()
     {
-        return empName;
+        return name;
     }
 
-    public String getNum()
+    public String getEmpNo()
     {
-        return empNum;
+        return empNo;
     }
-    
-    public String getDep()
+
+    public String getDepartment()
     {
         return department;
     }
-        
+
     public char getType()
     {
         return type;
     }
-    
-    public void setName(String name)
+
+    public void setName (String name)
     {
-        empName = name;
+        this.name = name;
     }
 
-    public void setNum(String num)
+    public void setEmpNo(String empNum)
     {
-        empNum = num;
+        this.empNo = empNum;
+    }
+
+    public void setDepartment (String dept)
+    {
+        department = dept;
+    }
+
+    public void setType(char t)
+    {
+        type = t;
+    }
+
+    public boolean equals (Employee e)
+    {
+        boolean ans;
+
+        if (empNo.equals (e.empNo))
+            ans = true;
+        else
+            ans = false;
+
+        return ans;
+    }
+
+   
+    public String toString ()
+    {
+        String output;
+
+        output = ("Employee Name:  \t\t" + name + "\n");
+        output = output + ("Employee Number: \t\t" + empNo + "\n");
+        output = output + ("Department: \t\t" + department + "\n");
+        output = output + ("Type: \t\t" + type + "\n");
+
+        return output;
     }
     
-    public void setDep(String dep)
+    public void writeData (PrintWriter out) throws IOException
     {
-        department = dep;
+        out.print(name + " " + empNo + " " + department + " " + type + " ");
+    }
+
+
+    public boolean topSeller()
+    {
+        boolean t = false;
+        return t;
+    }
+
+    public double calcWeeklySalary()
+    {
+        double weeklySal = 0.0;
+        return weeklySal;
+    }
+
+    public void setHrsWorked (double num)
+    {
+    }
+
+    public double getWeekSales()
+    {
+        double wkSales = 0.0;
+        return wkSales;
+    }
+
+    public double getYearSales()
+    {
+        double yrSales = 0.0;
+        return yrSales;
+    }
+
+    public int getNumWeeks()
+    {
+        int wks = 0;
+        return wks;
+    }
+
+    public void setYearSales(double amt) 
+    {
+    }
+
+    public void setWeekSales(double amt) 
+    {
+    }
+
+    public void setNumWeeks(int amt) 
+    {
     }
 
 }
+
