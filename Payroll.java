@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Payroll extends Employee
+public class Payroll
 {
     ArrayList <Employee> Employees = new ArrayList<Employee>();
 
@@ -31,10 +31,43 @@ public class Payroll extends Employee
             temp = fileInput.next();
             type = temp.charAt(0);
 
+<<<<<<< HEAD
                Employee e1 = new Employee(empName, empNum, dep, type);
                 Employees.add(e1);
  
 
+=======
+            if (type == 'H')
+            {
+                hRate = fileInput.nextDouble();
+                weeklyHrs = fileInput.nextDouble();
+                
+                Hourly h1 = new Hourly(empName, empNum, dep, type, hRate, weeklyHrs);
+                Employees.add(h1);
+            }
+            else if(type == 'S')
+            {
+                ySal = fileInput.nextDouble();
+                
+                Salary s1 = new Salary(empName, empNum, dep, type, ySal);
+                Employees.add(s1);
+            }
+            else if(type == 'C')
+            {
+                weeksSinceStart = fileInput.nextInt();
+                baseSal = fileInput.nextDouble();
+                wSales = fileInput.nextDouble();
+                salesLessWeekly = fileInput.nextDouble();
+                commRate = fileInput.nextDouble();
+                
+                Commission c1 = new Commission(empName, empNum, dep, type, weeksSinceStart, baseSal, wSales, salesLessWeekly, commRate);
+                Employees.add(c1);
+            }
+            else
+            {
+                
+            }
+>>>>>>> Max-Branch
         }
         fileInput.close();
     }

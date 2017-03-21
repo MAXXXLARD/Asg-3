@@ -8,13 +8,10 @@ public class Salary extends Employee
         
     }
     
-    public Salary(double ySal)
+    public Salary(String name, String empNo, String dept, char t, double ySal)
     {
+        super(name, empNo, dept, t);
         yearlySal = ySal;
-        super.getName();
-        super.getEmpNo();
-        super.getDepartment();
-        super.getType();
     }
     
     public double getYearlySalary()

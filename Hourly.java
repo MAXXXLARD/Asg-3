@@ -2,11 +2,7 @@
 public class Hourly extends Employee
 {
     private double hPayRate;
-
-    
-
-
-    private double weeklyHours;
+	private double weeklyHours;
     private double weeklySalary;
 
     public Hourly()
@@ -14,14 +10,11 @@ public class Hourly extends Employee
 
     }
 
-    public Hourly(double hPay, int wHours)
+    public Hourly(String name, String empNo, String dept, char t, double hPay, double wHours)
     {
+        super(name, empNo, dept, t);
         hPayRate = hPay;
         weeklyHours = wHours;
-        super.getName();
-        super.getEmpNo();
-        super.getDepartment();
-        super.getType();
     }
 
     public double getHourlyPay()
