@@ -24,7 +24,7 @@ public class Commission extends Employee
     public Commission (String name, String empNo, String dept, char t, int num, double base, double w_amt, double y_amt, double rate)
     {
         super(name, empNo, dept, t);
-        type = 'C';
+        
         numWeeks = num;
         baseSal = base;
         weekSales = w_amt;
