@@ -18,8 +18,13 @@ public class Employee
 
     public Employee (String name, String empNum, String dept, char t )
     {
+<<<<<<< HEAD
         this.name = name;
         this.empNo = empNum;
+=======
+        empName = eName;
+        empNum = eNum;
+>>>>>>> Max-Branch
         department = dept;
         type = t;
     }
