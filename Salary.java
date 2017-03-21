@@ -12,10 +12,28 @@ public class Salary extends Employee
     {
         yearlySal = ySal;
         super.getName();
+        super.getNum();
+        super.getDep();
+        super.getType();
     }
     
     public double getYearlySalary()
     {
         return yearlySal;
+    }
+    
+    public void setYearlySalary(double yearSal)
+    {
+        yearlySal = yearSal;
+    }
+    
+    public double calcYearlySalary()
+    {
+        double salFrac = 0.01923076923;
+        double yearlySalary = 0.0;
+        
+        yearlySalary = yearlySal * salFrac;
+        
+        return yearlySalary;
     }
 }
