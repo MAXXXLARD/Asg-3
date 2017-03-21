@@ -18,4 +18,5 @@ public class Salary extends Employee
     {
         return yearlySal;
     }
+    
 }

@@ -1,9 +1,6 @@
 
 public class Hourly extends Employee
 {
-
-    double payRate=0.00;
-    double hoursWrk=0.00;
     private double hPayRate;
     private int weeklyHours;
 
@@ -11,13 +8,6 @@ public class Hourly extends Employee
     public Hourly()
     {
         
-    }
-    
-
-    public Hourly(double pRate, double hWrk)
-    {
-        payRate=pRate;
-        hoursWrk=hWrk;
     }
 
     public Hourly(double hPay, int wHours)

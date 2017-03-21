@@ -1,50 +1,147 @@
+import java.io.*;
+import java.util.Scanner;
 
 public class Commission extends Employee
 {
-    private int totalWeeks;
+    
+    private int numWeeks;
     private double baseSal;
-    private double weeklySales;
-    private double salesLessWeekly;
-    private double commissionRate;
+    private double weekSales;
+    private double yearSales;
+    private double commRate;
+    private char type;
     
     public Commission()
     {
-        
+       
+        numWeeks = 0;
+        baseSal = 0.0;
+        weekSales = 0.0;
+        yearSales = 0.0;
+        commRate = 0.0;
     }
     
-    public Commission(int tWeeks, double bSal, double wSales, double sLessWeekly, double cRate)
+    public Commission (String name, String empNo, String dept, char t, int num, double base, double w_amt, double y_amt, double rate)
     {
-        totalWeeks = tWeeks;
-        baseSal = bSal;
-        weeklySales = wSales;
-        salesLessWeekly = sLessWeekly;
-        commissionRate = cRate;
-        super.getName();
+        super(name, empNo, dept, t);
+        type = 'C';
+        numWeeks = num;
+        baseSal = base;
+        weekSales = w_amt;
+        yearSales = y_amt;
+        commRate = rate;
     }
     
-    public double getTotalWeeks()
+    public char getType()
     {
-        return totalWeeks;
+        return type;
     }
     
-    public double getBaseSalary()
+    public int getNumWeeks()
+    {
+        return numWeeks;
+    }
+    
+    public double getBaseSal()
     {
         return baseSal;
     }
     
-    public double getWeeklySales()
+    public double getWeekSales()
     {
-        return weeklySales;
+        return weekSales;
     }
     
-    public double getSalesLessWeekly()
+    public double getYearSales()
     {
-        return salesLessWeekly;
+        return yearSales;
     }
     
-    public double getCommissionRate()
+    public double getCommRate()
     {
-        return commissionRate;
+        return commRate;
     }
     
+    public void setType (char type)
+    {
+        this.type = type;
+    }
+    
+    public void setNumWeeks(int num)
+    {
+        numWeeks = num;
+    }
+    
+    public void setBaseSal(double base)
+    {
+        baseSal = base;
+    }
+    
+    public void setWeekSales(double amt)
+    {
+        weekSales = amt;
+    }
+    
+    public void setYearSales(double amt)
+    {
+        yearSales = amt;
+    }
+    
+    public void setCommRate(double rate)
+    {
+        commRate = rate;
+    }
+  
+    public double calcWeeklySalary ()
+    {
+        double weeklySal;
+        
+        Scanner kb = new Scanner (System.in);
+        
+        System.out.println ("Please enter the weekly Sales of " + getName() + " ");// + getS_i_n());
+        weekSales = kb.nextDouble();
+        
+        weeklySal = baseSal + (commRate/100.0) * weekSales;
+        
+        return weeklySal;
+    }
+    
+    // Top Seller 
+    public boolean topSeller()
+    {
+        boolean top = false;
+        double aveSales;
+        
+        aveSales = (yearSales + weekSales) / (numWeeks + 1.0);
+        
+        if (aveSales >= 1500)
+            top = true;
+            
+        return top;
+        
+    }
+    
+    public String toString()
+    {
+        String output;
+        
+        output = super.toString();
+        
+        output = output + ("Base Salary:\t\t\t" + baseSal + "\n");
+        output = output + ("Number of Weeks worked: \t" + numWeeks + "\n");
+        output = output + ("Weekly Sales: \t\t\t" + weekSales + "\n");
+        output = output + ("Year to Date Sales: \t\t" + yearSales + "\n");
+        output = output + ("Commission Rate:\t\t" + commRate);
+        
+        return output;
+    }
+   
+    
+    public void writeData(PrintWriter out) throws IOException
+    {   
+        //super.writeData(out);
+        out.print (numWeeks + " " + baseSal + " " + weekSales + " " + yearSales + " " + commRate); 
+        out.println();
+    }
+
 }
