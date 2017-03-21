@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Employee
+public class Employee extends Payroll
 {
     protected String name;
     protected String empNo;
@@ -16,10 +16,10 @@ public class Employee
         type = ' ';
     }
 
-    public Employee (String empName, String empNum, String dept, char t )
+    public Employee (String empName, String empNum, String dept, char t)
     {
-        name=empName;
-        empNo=empNum;
+        name = empName;
+        empNo = empNum;
         department = dept;
         type = t;
     }

@@ -12,11 +12,11 @@ public class Client
         // place here the code for the processing requirements
         Client.showMenu();
         option = Client.getInput();
+        p1.loadData();
+        
         while (!option.equalsIgnoreCase("Q")) {
             switch (option) {
                 case "A":
-  
-                p1.loadData();
                 
                 break;
                 case "I":
