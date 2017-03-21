@@ -1,61 +1,61 @@
 import java.util.Scanner;
+import java.io.*;
 public class Client
 {
-    public static void main(String args[])
+    public static void main(String args[]) throws IOException
     {
-<<<<<<< HEAD
+
         String option;
         Commission Comm = new Commission();
-        
+        Payroll p1=new Payroll();
+
         // place here the code for the processing requirements
         Client.showMenu();
         option = Client.getInput();
         while (!option.equalsIgnoreCase("Q")) {
             switch (option) {
                 case "A":
-                    
-                    break;
+  
+                p1.loadData();
+                
+                break;
                 case "I":
-                   
-                    break;
+
+                break;
                 case "D":
-                   
-                    break;
+
+                break;
                 case "S":
-                  
-                    break;
-                
+
+                break;
+
                 case "T":
-                   Comm.topSeller();
-                    break;
-                    
+                Comm.topSeller();
+                break;
+
                 case "P":
-                    
-                    break;
-                
+
+                break;
+
                 case "W":
-                    
-                    break;
-                
-          
+
+                break;
+
                 
             }
             Client.showMenu();
             option = Client.getInput();
         }
         System.out.println ("\nThank you for using the Payroll Processing System");
-=======
-        // define necessary variables here
         
+        // define necessary variables here
+
         // place here the code for the processing requirements
-        Payroll p1 = new Payroll();
-        System.out.println ("Thank you for using the Payroll Processing System");
->>>>>>> Max-Branch
+  
+        
     }
-    
-   
+
     //   The Payroll processing menu
-     
     public static void showMenu()
     {
         System.out.println("\nMENU:");

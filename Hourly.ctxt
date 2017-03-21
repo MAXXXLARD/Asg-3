@@ -5,11 +5,6 @@ comment1.params=hPay\ wHours
 comment1.target=Hourly(double,\ int)
 comment2.params=
 comment2.target=double\ getHourlyPay()
-<<<<<<< HEAD
-comment3.params=
-comment3.target=double\ getWeeklyHours()
-numComments=4
-=======
 comment3.params=hPayR
 comment3.target=void\ setHourlyPay(double)
 comment4.params=
@@ -19,4 +14,3 @@ comment5.target=void\ setWeeklyHours(int)
 comment6.params=
 comment6.target=double\ calcWeeklySalary()
 numComments=7
->>>>>>> Max-Branch

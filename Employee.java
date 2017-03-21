@@ -16,20 +16,14 @@ public class Employee
         type = ' ';
     }
 
-    public Employee (String name, String empNum, String dept, char t )
+    public Employee (String empName, String empNum, String dept, char t )
     {
-<<<<<<< HEAD
-        this.name = name;
-        this.empNo = empNum;
-=======
-        empName = eName;
-        empNum = eNum;
->>>>>>> Max-Branch
+        name=empName;
+        empNo=empNum;
         department = dept;
         type = t;
     }
 
-    
     public String getName()
     {
         return name;

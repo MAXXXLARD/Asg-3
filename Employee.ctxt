@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Employee()
-comment1.params=name\ empNum\ dept\ t
+comment1.params=empName\ empNum\ dept\ t
 comment1.target=Employee(java.lang.String,\ java.lang.String,\ java.lang.String,\ char)
 comment10.params=e
 comment10.target=boolean\ equals(Employee)

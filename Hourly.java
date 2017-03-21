@@ -2,15 +2,13 @@
 public class Hourly extends Employee
 {
     private double hPayRate;
-<<<<<<< HEAD
-    private int weeklyHours;
 
     
-=======
+
+
     private double weeklyHours;
     private double weeklySalary;
 
->>>>>>> Max-Branch
     public Hourly()
     {
 
@@ -21,8 +19,8 @@ public class Hourly extends Employee
         hPayRate = hPay;
         weeklyHours = wHours;
         super.getName();
-        super.getNum();
-        super.getDep();
+        super.getEmpNo();
+        super.getDepartment();
         super.getType();
     }
 
@@ -30,24 +28,19 @@ public class Hourly extends Employee
     {
         return hPayRate;
     }
-<<<<<<< HEAD
-    
-=======
+
 
     public void setHourlyPay(double hPayR)
     {
         hPayRate = hPayR;
     }
 
->>>>>>> Max-Branch
     public double getWeeklyHours()
     {
         return weeklyHours;
     }
-<<<<<<< HEAD
-}
 
-=======
+
 
     public void setWeeklyHours(int weeklyH)
     {
@@ -70,4 +63,3 @@ public class Hourly extends Employee
         return weeklySalary;
     }
 }
->>>>>>> Max-Branch
