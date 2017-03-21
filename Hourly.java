@@ -2,6 +2,10 @@
 public class Hourly extends Employee
 {
     private double hPayRate;
+
+    
+
+
     private double weeklyHours;
     private double weeklySalary;
 
@@ -15,8 +19,8 @@ public class Hourly extends Employee
         hPayRate = hPay;
         weeklyHours = wHours;
         super.getName();
-        super.getNum();
-        super.getDep();
+        super.getEmpNo();
+        super.getDepartment();
         super.getType();
     }
 
@@ -24,6 +28,7 @@ public class Hourly extends Employee
     {
         return hPayRate;
     }
+
 
     public void setHourlyPay(double hPayR)
     {
@@ -34,6 +39,8 @@ public class Hourly extends Employee
     {
         return weeklyHours;
     }
+
+
 
     public void setWeeklyHours(int weeklyH)
     {

@@ -1,17 +1,61 @@
+import java.util.Scanner;
+import java.io.*;
 public class Client
 {
-    public static void main(String args[])
+    public static void main(String args[]) throws IOException
     {
-        // define necessary variables here
-        
+
+        String option;
+        Commission Comm = new Commission();
+        Payroll p1=new Payroll();
+
         // place here the code for the processing requirements
-        Payroll p1 = new Payroll();
-        System.out.println ("Thank you for using the Payroll Processing System");
+        Client.showMenu();
+        option = Client.getInput();
+        while (!option.equalsIgnoreCase("Q")) {
+            switch (option) {
+                case "A":
+  
+                p1.loadData();
+                
+                break;
+                case "I":
+
+                break;
+                case "D":
+
+                break;
+                case "S":
+
+                break;
+
+                case "T":
+                Comm.topSeller();
+                break;
+
+                case "P":
+
+                break;
+
+                case "W":
+
+                break;
+
+                
+            }
+            Client.showMenu();
+            option = Client.getInput();
+        }
+        System.out.println ("\nThank you for using the Payroll Processing System");
+        
+        // define necessary variables here
+
+        // place here the code for the processing requirements
+  
+        
     }
-    
-   
+
     //   The Payroll processing menu
-     
     public static void showMenu()
     {
         System.out.println("\nMENU:");
@@ -22,7 +66,12 @@ public class Client
         System.out.println("P - prints salary report");
         System.out.println("W - End of week processing");
         System.out.println();
-        System.out.println("Q - Quit the system");
+        System.out.println("Q - Quit the system\n");
     }
 
+    public static String getInput() {
+        Scanner s = new Scanner(System.in);
+        String chosen = s.nextLine();
+        return chosen;
+    }
 }

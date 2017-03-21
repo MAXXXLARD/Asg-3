@@ -12,8 +12,8 @@ public class Salary extends Employee
     {
         yearlySal = ySal;
         super.getName();
-        super.getNum();
-        super.getDep();
+        super.getEmpNo();
+        super.getDepartment();
         super.getType();
     }
     
@@ -22,6 +22,7 @@ public class Salary extends Employee
         return yearlySal;
     }
     
+
     public void setYearlySalary(double yearSal)
     {
         yearlySal = yearSal;
@@ -36,4 +37,5 @@ public class Salary extends Employee
         
         return yearlySalary;
     }
+
 }

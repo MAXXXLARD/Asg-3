@@ -31,8 +31,18 @@ public class Payroll extends Employee
             temp = fileInput.next();
             type = temp.charAt(0);
 
-            Employee e1 = new Employee(empName, empNum, dep, type);
-            Employees.add(e1);
+            if (type=='H')
+            {
+                hRate=fileInput.nextDouble();
+                weeklyHrs=fileInput.nextDouble();
+                
+                Hourly h1 = new Hourly(empName, empNum, dep, type, hRate, weeklyHrs);
+                Employees.add(h1);
+            }
+               // Employee e1 = new Employee(empName, empNum, dep, type);
+                //Employees.add(e1);
+ 
+
         }
         fileInput.close();
     }
