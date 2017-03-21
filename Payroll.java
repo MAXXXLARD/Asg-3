@@ -31,32 +31,18 @@ public class Payroll extends Employee
             temp = fileInput.next();
             type = temp.charAt(0);
 
-<<<<<<< HEAD
-            if (type == 'H')
+            if (type=='H')
             {
-                hRate = fileInput.nextDouble();
-                weeklyHrs = fileInput.nextDouble();
-
-                Employee e1 = new Employee(empName, empNum, dep, temp, type, hRate, weeklyHrs);
-                Employees.add(e1);
+                hRate=fileInput.nextDouble();
+                weeklyHrs=fileInput.nextDouble();
+                
+                Hourly h1 = new Hourly(empName, empNum, dep, type, hRate, weeklyHrs);
+                Employees.add(h1);
             }
-            else if (type == 'S')
-            {
+               // Employee e1 = new Employee(empName, empNum, dep, type);
+                //Employees.add(e1);
+ 
 
-            }
-            else if (type == 'C')
-            {
-
-            }
-            else
-            {
-
-            }
-
-=======
-            Employee e1 = new Employee(empName, empNum, dep, type);
-            Employees.add(e1);
->>>>>>> Max-Branch
         }
         fileInput.close();
     }
