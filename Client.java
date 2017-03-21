@@ -3,9 +3,9 @@ public class Client
     public static void main(String args[])
     {
         // define necessary variables here
-
+        
         // place here the code for the processing requirements
-
+        Payroll p1 = new Payroll();
         System.out.println ("Thank you for using the Payroll Processing System");
     }
     

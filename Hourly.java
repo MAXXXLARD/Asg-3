@@ -2,7 +2,7 @@
 public class Hourly extends Employee
 {
     private double hPayRate;
-    private int weeklyHours;
+    private double weeklyHours;
     private double weeklySalary;
 
     public Hourly()
@@ -30,7 +30,7 @@ public class Hourly extends Employee
         hPayRate = hPayR;
     }
 
-    public int getWeeklyHours()
+    public double getWeeklyHours()
     {
         return weeklyHours;
     }
