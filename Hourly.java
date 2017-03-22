@@ -33,8 +33,6 @@ public class Hourly extends Employee
         return weeklyHours;
     }
 
-
-
     public void setWeeklyHours(int weeklyH)
     {
         weeklyHours = weeklyH;

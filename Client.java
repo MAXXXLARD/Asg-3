@@ -1,23 +1,25 @@
 import java.util.Scanner;
 import java.io.*;
+
 public class Client
 {
+    Scanner in = new Scanner(System.in);
     public static void main(String args[]) throws IOException
     {
 
         String option;
         Commission Comm = new Commission();
-        Payroll p1=new Payroll();
+        Payroll p1 = new Payroll();
 
         // place here the code for the processing requirements
-        Client.showMenu();
-        option = Client.getInput();
+        showMenu();
+        option = getInput();
         p1.loadData();
-        
+
         while (!option.equalsIgnoreCase("Q")) {
             switch (option) {
                 case "A":
-                
+                p1.newEmployee();
                 break;
                 case "I":
 
@@ -41,20 +43,17 @@ public class Client
 
                 break;
 
-                
             }
             Client.showMenu();
             option = Client.getInput();
         }
         System.out.println ("\nThank you for using the Payroll Processing System");
-        
+
         // define necessary variables here
 
         // place here the code for the processing requirements
-  
-        
-    }
 
+    }
     //   The Payroll processing menu
     public static void showMenu()
     {
@@ -69,9 +68,12 @@ public class Client
         System.out.println("Q - Quit the system\n");
     }
 
-    public static String getInput() {
+    public static String getInput() 
+    {
         Scanner s = new Scanner(System.in);
         String chosen = s.nextLine();
         return chosen;
     }
+
+    
 }
