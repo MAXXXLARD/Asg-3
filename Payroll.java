@@ -179,7 +179,7 @@ public class Payroll
         int count = 0;
         String userChoice;
         String choice;
-        
+
         System.out.println("Enter an employee number");
         String userStr = in.next();
         empNo = validateNum(userStr);
@@ -191,7 +191,7 @@ public class Payroll
             {
                 System.out.println("Do you wish to remove employee number " + userStr + "? (Y/N)");
                 userChoice = in.next();
-                
+
                 if (userChoice.equalsIgnoreCase("Y"))
                 {
                     Employees.remove(count);
@@ -199,7 +199,7 @@ public class Payroll
                 }
                 else if (userChoice.equalsIgnoreCase("N"))
                 {
-                    
+
                 }
                 else
                 {
@@ -208,6 +208,26 @@ public class Payroll
             }
             count++;
         }
+    }
+
+    public void calcWeeklySal()
+    {
+
+    }
+
+    public void printTopSellers()
+    {
+
+    }
+
+    public void weeklySalaryReport()
+    {
+
+    }
+
+    public void endOfWeekProcessing()
+    {
+
     }
 
     public void printInfo()

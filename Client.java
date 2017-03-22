@@ -30,19 +30,19 @@ public class Client
                 break;
                 
                 case "S":
-                
+                p1.calcWeeklySal();
                 break;
 
                 case "T":
-                
+                p1.printTopSellers();
                 break;
 
                 case "P":
-
+                p1.weeklySalaryReport();
                 break;
 
                 case "W":
-
+                p1.endOfWeekProcessing();
                 break;
                 
                 default:
