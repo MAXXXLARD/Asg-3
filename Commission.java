@@ -89,13 +89,13 @@ public class Commission extends Employee
         commRate = rate;
     }
   
-    public double calcWeeklySalary ()
+    public double calcWeeklySalary()
     {
         double weeklySal;
         
         Scanner kb = new Scanner (System.in);
         
-        System.out.println ("Please enter the weekly Sales of " + getName() + " ");// + getS_i_n());
+        System.out.println ("Please enter the weekly Sales of " + getName() + " ");
         weekSales = kb.nextDouble();
         
         weeklySal = baseSal + (commRate/100.0) * weekSales;
@@ -133,13 +133,11 @@ public class Commission extends Employee
         
         return output;
     }
-   
-    
-    public void writeData(PrintWriter out) throws IOException
-    {   
-        super.writeData(out);
-        out.print (numWeeks + " " + baseSal + " " + weekSales + " " + yearSales + " " + commRate); 
-        out.println();
-    }
 
+    public void writeData ()
+    {
+        super.writeData();
+        System.out.print("Number of weeks worked: " + numWeeks + "\nBase salary: " + baseSal + "\nWeekly Sales: " + weekSales + "\nYearly sales less weekly sales" + yearSales + "\nComission rate:  " + commRate);
+        System.out.println();
+    }
 }

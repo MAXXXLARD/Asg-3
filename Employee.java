@@ -7,7 +7,6 @@ public class Employee extends Payroll
     protected String department;
     protected char type;
 
-    
     public Employee()
     {
         name = "";
@@ -69,14 +68,17 @@ public class Employee extends Payroll
         boolean ans;
 
         if (empNo.equals (e.empNo))
+        {
             ans = true;
+        }
         else
+        {
             ans = false;
+        }
 
         return ans;
     }
 
-   
     public String toString ()
     {
         String output;
@@ -88,12 +90,11 @@ public class Employee extends Payroll
 
         return output;
     }
-    
-    public void writeData (PrintWriter out) throws IOException
-    {
-        out.print(name + " " + empNo + " " + department + " " + type + " ");
-    }
 
+    public void writeData ()
+    {
+        System.out.print("Employee Name: " + name + "\nEmployee Number: " + empNo + "\nDepartment: " + department + "\nType: " + type + "\n");
+    }
 
     public boolean topSeller()
     {
@@ -142,4 +143,3 @@ public class Employee extends Payroll
     }
 
 }
-
