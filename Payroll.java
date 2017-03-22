@@ -179,7 +179,7 @@ public class Payroll
         int count = 0;
         String userChoice;
         String choice;
-
+        
         System.out.println("Enter an employee number");
         String userStr = in.next();
         empNo = validateNum(userStr);
