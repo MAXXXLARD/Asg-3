@@ -156,23 +156,36 @@ public class Payroll
         }
     }
 
-    public void printInfo()
+    public Employee validateNum(String num)
     {
+        Employee emp = null;
         int count = 0;
-        String empNo = "333-333-333";
         
-        System.out.println("Enter an employee number");
-        String userStr = in.next();
-        
-        while (!(Employees.isEmpty()))
+        while(count < Employees.size())
         {
-            
-            if (userStr == empNo)
+            if (Employees.get(count).getEmpNo().equals(num))
             {
-                Employees.get(count);
+                emp = Employees.get(count);
             }
             count++;
         }
         
+        return emp;
+    }
+    
+    public void printInfo()
+    {
+        int count = 0;
+        Employee empNo = null;
+        
+        System.out.println("Enter an employee number");
+        String userStr = in.next();
+        empNo = validateNum(userStr);
+        System.out.println();
+        
+        if (empNo != null)
+        {
+            empNo.writeData();
+        }
     }
 }

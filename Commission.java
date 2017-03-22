@@ -133,13 +133,9 @@ public class Commission extends Employee
         
         return output;
     }
-   
-    
-    public void writeData(PrintWriter out) throws IOException
-    {   
-        super.writeData(out);
-        out.print (numWeeks + " " + baseSal + " " + weekSales + " " + yearSales + " " + commRate); 
-        out.println();
-    }
 
+    public void writeData ()
+    {
+        System.out.print(name + " " + empNo + " " + department + " " + type + " " + numWeeks + " " + baseSal + " " + weekSales + " " + yearSales + " " + commRate);
+    }
 }

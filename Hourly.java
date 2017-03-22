@@ -2,7 +2,7 @@
 public class Hourly extends Employee
 {
     private double hPayRate;
-	private double weeklyHours;
+    private double weeklyHours;
     private double weeklySalary;
 
     public Hourly()
@@ -21,7 +21,6 @@ public class Hourly extends Employee
     {
         return hPayRate;
     }
-
 
     public void setHourlyPay(double hPayR)
     {
@@ -52,5 +51,11 @@ public class Hourly extends Employee
         }
 
         return weeklySalary;
+    }
+
+    public void writeData ()
+    {
+        super.writeData();
+        System.out.print("Hourly pay rate: " + hPayRate + "\n" + "Weekly hours" + weeklyHours);
     }
 }
