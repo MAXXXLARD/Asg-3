@@ -232,12 +232,32 @@ public class Payroll
 
     public void printTopSellers()
     {
-
+        
     }
 
     public void weeklySalaryReport()
     {
-
+        int count = 0;
+        String type = "";
+        
+        while (count < Employees.size())
+        {
+            if (Employees.get(count).getType() == 'S')
+            {
+                type = "Salary";
+            }
+            else if (Employees.get(count).getType() == 'H')
+            {
+                type = "Hourly";
+            }
+            else 
+            {
+                type = "Commission";
+            }
+            
+            System.out.println(Employees.get(count).getName() + "\t" + Employees.get(count).getEmpNo() + "\t" + type + "\t" + Employees.get(count).calcWeeklySalary());
+            count++;
+        }
     }
 
     public void endOfWeekProcessing()
