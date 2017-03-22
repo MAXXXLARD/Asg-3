@@ -212,7 +212,22 @@ public class Payroll
 
     public void calcWeeklySal()
     {
-
+        Employee empNo = null;
+        int count = 0;
+        
+        System.out.println("Enter an employee number");
+        String userStr = in.next();
+        empNo = validateNum(userStr);
+        System.out.println();
+        
+        while(count < Employees.size())
+        {
+            if (Employees.get(count).getEmpNo().equals(userStr))
+            {
+                System.out.println("The weekly salary for employee " + userStr + " is " + Employees.get(count).calcWeeklySalary());
+            }
+            count++;
+        }
     }
 
     public void printTopSellers()

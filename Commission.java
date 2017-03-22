@@ -89,13 +89,13 @@ public class Commission extends Employee
         commRate = rate;
     }
   
-    public double calcWeeklySalary ()
+    public double calcWeeklySalary()
     {
         double weeklySal;
         
         Scanner kb = new Scanner (System.in);
         
-        System.out.println ("Please enter the weekly Sales of " + getName() + " ");// + getS_i_n());
+        System.out.println ("Please enter the weekly Sales of " + getName() + " ");
         weekSales = kb.nextDouble();
         
         weeklySal = baseSal + (commRate/100.0) * weekSales;
