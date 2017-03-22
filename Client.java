@@ -22,7 +22,7 @@ public class Client
                 p1.newEmployee();
                 break;
                 case "I":
-
+                p1.printInfo();
                 break;
                 case "D":
 
