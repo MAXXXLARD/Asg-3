@@ -136,6 +136,8 @@ public class Commission extends Employee
 
     public void writeData ()
     {
-        System.out.print(name + " " + empNo + " " + department + " " + type + " " + numWeeks + " " + baseSal + " " + weekSales + " " + yearSales + " " + commRate);
+        super.writeData();
+        System.out.print("Number of weeks worked: " + numWeeks + "\nBase salary: " + baseSal + "\nWeekly Sales: " + weekSales + "\nYearly sales less weekly sales" + yearSales + "\nComission rate:  " + commRate);
+        System.out.println();
     }
 }

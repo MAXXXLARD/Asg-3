@@ -5,7 +5,7 @@ public class Payroll
 {
     ArrayList <Employee> Employees = new ArrayList<Employee>();
     Scanner in = new Scanner(System.in);
-    
+
     public void loadData()throws IOException
     {
         Scanner fileInput = new Scanner(new File("in.txt"));
@@ -160,7 +160,7 @@ public class Payroll
     {
         Employee emp = null;
         int count = 0;
-        
+
         while(count < Employees.size())
         {
             if (Employees.get(count).getEmpNo().equals(num))
@@ -169,23 +169,63 @@ public class Payroll
             }
             count++;
         }
-        
+
         return emp;
     }
-    
-    public void printInfo()
+
+    public void removeEmployee()
     {
-        int count = 0;
         Employee empNo = null;
-        
+        int count = 0;
+        String userChoice;
+        String choice;
+
         System.out.println("Enter an employee number");
         String userStr = in.next();
         empNo = validateNum(userStr);
         System.out.println();
-        
+
+        while(count < Employees.size())
+        {
+            if (Employees.get(count).getEmpNo().equals(userStr))
+            {
+                System.out.println("Do you wish to remove employee number " + userStr + "? (Y/N)");
+                userChoice = in.next();
+                
+                if (userChoice.equalsIgnoreCase("Y"))
+                {
+                    Employees.remove(count);
+                    System.out.println("Employee " + userStr + " has been removed");
+                }
+                else if (userChoice.equalsIgnoreCase("N"))
+                {
+                    
+                }
+                else
+                {
+                    System.out.println("Invalid choice");
+                }
+            }
+            count++;
+        }
+    }
+
+    public void printInfo()
+    {
+        Employee empNo = null;
+
+        System.out.println("Enter an employee number");
+        String userStr = in.next();
+        empNo = validateNum(userStr);
+        System.out.println();
+
         if (empNo != null)
         {
             empNo.writeData();
+        }
+        else
+        {
+            System.out.println("Employee does not exist");
         }
     }
 }

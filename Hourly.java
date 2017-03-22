@@ -57,5 +57,6 @@ public class Hourly extends Employee
     {
         super.writeData();
         System.out.print("Hourly pay rate: " + hPayRate + "\n" + "Weekly hours" + weeklyHours);
+        System.out.println();
     }
 }

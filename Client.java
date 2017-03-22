@@ -8,7 +8,6 @@ public class Client
     {
 
         String option;
-        Commission Comm = new Commission();
         Payroll p1 = new Payroll();
 
         // place here the code for the processing requirements
@@ -21,18 +20,21 @@ public class Client
                 case "A":
                 p1.newEmployee();
                 break;
+                
                 case "I":
                 p1.printInfo();
                 break;
+                
                 case "D":
-
+                p1.removeEmployee();
                 break;
+                
                 case "S":
-
+                
                 break;
 
                 case "T":
-                Comm.topSeller();
+                
                 break;
 
                 case "P":
@@ -42,7 +44,9 @@ public class Client
                 case "W":
 
                 break;
-
+                
+                default:
+                System.out.println("Invalid choice");
             }
             Client.showMenu();
             option = Client.getInput();
