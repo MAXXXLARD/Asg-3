@@ -68,6 +68,7 @@ public class Client
         System.out.println("I - Print information of an individual employee");
         System.out.println("D - Remove an employee from payroll");
         System.out.println("S - calculate and print the weekly pay of an employee");
+        System.out.println("T - print out list of top sellers");
         System.out.println("P - prints salary report");
         System.out.println("W - End of week processing");
         System.out.println();

@@ -233,13 +233,14 @@ public class Payroll
     public void printTopSellers()
     {
         int count = 0;
+        System.out.println("Top sellers");
         
         while (count < Employees.size())
         {
-            //if ()
-            //{
-                
-            //}
+            if (Employees.get(count).topSeller() == true)
+            {
+                System.out.println(Employees.get(count).getName() + " " + Employees.get(count).getEmpNo());
+            }
             count++;
         }
     }
