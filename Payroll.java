@@ -270,9 +270,39 @@ public class Payroll
         }
     }
 
-    public void endOfWeekProcessing()
+    public void endOfWeekProcessing() throws IOException
     {
+        int count = 0;
+        int weeks = 0;
+        PrintWriter toFile = new PrintWriter("newWeek.txt");
+        
+        while (count < Employees.size())
+        {
+            Employees.get(count).setHrsWorked(0);
+            
+            Employees.get(count).setWeekSales(0.0);
+            
+            weeks = Employees.get(count).getNumWeeks();
+            Employees.get(count).setNumWeeks(weeks + 1);
+            
+            count++;
+        }
+        
+        count = 0;
+        
+        while(count < Employees.size())
+        {
+            toFile.print(Employees.get(count) + " ");
+            
+            if(count <= Employees.size())
+            {
+                toFile.println();
+            }
+            count++;
+        }
 
+        System.out.println("File has finished writing!");
+        toFile.close();
     }
 
     public void printInfo()

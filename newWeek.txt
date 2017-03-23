@@ -1,0 +1,19 @@
+Employee Name:  		Sally
+Employee Number: 		333-333-333
+Department: 		Finance
+Type: 		H
+ 
+Employee Name:  		Arnie
+Employee Number: 		222-222-222
+Department: 		Personnel
+Type: 		S
+ 
+Employee Name:  		Bobby
+Employee Number: 		111-111-111
+Department: 		Appliances
+Type: 		C
+Base Salary:			300.0
+Number of Weeks worked: 	11
+Weekly Sales: 			0.0
+Year to Date Sales: 		10000.0
+Commission Rate:		10.0 
