@@ -5,8 +5,6 @@ dependency1.type=UsesDependency
 dependency2.from=Client
 dependency2.to=Payroll
 dependency2.type=UsesDependency
-<<<<<<< HEAD
-=======
 dependency3.from=Payroll
 dependency3.to=Employee
 dependency3.type=UsesDependency
@@ -19,20 +17,13 @@ dependency5.type=UsesDependency
 dependency6.from=Payroll
 dependency6.to=Commission
 dependency6.type=UsesDependency
->>>>>>> master
 objectbench.height=76
 objectbench.width=762
 package.editor.height=400
 package.editor.width=654
-<<<<<<< HEAD
-package.editor.x=41
-package.editor.y=179
-package.numDependencies=2
-=======
 package.editor.x=573
 package.editor.y=162
 package.numDependencies=6
->>>>>>> master
 package.numTargets=6
 package.showExtends=true
 package.showUses=true
@@ -63,10 +54,10 @@ target2.typeParameters=
 target2.width=80
 target2.x=50
 target2.y=260
-target3.editor.height=1048
-target3.editor.width=1938
-target3.editor.x=-9
-target3.editor.y=-9
+target3.editor.height=944
+target3.editor.width=1680
+target3.editor.x=0
+target3.editor.y=23
 target3.height=50
 target3.name=Payroll
 target3.naviview.expanded=false
@@ -74,21 +65,12 @@ target3.showInterface=false
 target3.type=ClassTarget
 target3.typeParameters=
 target3.width=80
-<<<<<<< HEAD
-target3.x=540
-target3.y=220
+target3.x=360
+target3.y=50
 target4.editor.height=944
-target4.editor.width=976
-target4.editor.x=704
+target4.editor.width=1680
+target4.editor.x=0
 target4.editor.y=23
-=======
-target3.x=180
-target3.y=30
-target4.editor.height=1048
-target4.editor.width=1932
-target4.editor.x=-9
-target4.editor.y=-9
->>>>>>> master
 target4.height=50
 target4.name=Employee
 target4.naviview.expanded=false
@@ -97,16 +79,11 @@ target4.type=ClassTarget
 target4.typeParameters=
 target4.width=80
 target4.x=180
-<<<<<<< HEAD
-target4.y=10
-target5.editor.height=944
-=======
 target4.y=160
-target5.editor.height=1038
->>>>>>> master
+target5.editor.height=944
 target5.editor.width=976
-target5.editor.x=704
-target5.editor.y=23
+target5.editor.x=646
+target5.editor.y=219
 target5.height=50
 target5.name=Commission
 target5.naviview.expanded=true
@@ -114,17 +91,12 @@ target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
 target5.width=100
-<<<<<<< HEAD
-target5.x=260
-target5.y=150
-=======
 target5.x=320
 target5.y=260
->>>>>>> master
 target6.editor.height=700
 target6.editor.width=900
-target6.editor.x=489
-target6.editor.y=23
+target6.editor.x=-43
+target6.editor.y=39
 target6.height=50
 target6.name=Client
 target6.naviview.expanded=false
@@ -132,10 +104,5 @@ target6.showInterface=false
 target6.type=ClassTarget
 target6.typeParameters=
 target6.width=80
-<<<<<<< HEAD
-target6.x=60
-target6.y=290
-=======
 target6.x=480
 target6.y=250
->>>>>>> master
