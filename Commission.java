@@ -117,7 +117,6 @@ public class Commission extends Employee
             top = true;
         }
         return top;
-        
     }
     
     public String toString()
