@@ -25,14 +25,19 @@ public class Salary extends Employee
         yearlySal = yearSal;
     }
     
-    public double calcYearlySalary()
+    public double calcWeeklySalary()
     {
-        double salFrac = 0.01923076923;
-        double yearlySalary = 0.0;
+        final double salFrac = 0.01923076923;
+        double weeklySalary = 0.0;
         
-        yearlySalary = yearlySal * salFrac;
+        weeklySalary = yearlySal * salFrac;
         
-        return yearlySalary;
+        return weeklySalary;
     }
-
+    
+    public void writeData ()
+    {
+        super.writeData();
+        System.out.print("Yearly Salary: " + yearlySal + "\n");
+    }
 }
