@@ -15,20 +15,22 @@ public class Client
         option = getInput();
         p1.loadData();
 
-        while (!option.equalsIgnoreCase("Q")) {
-            switch (option) {
+        while (!option.equalsIgnoreCase("Q"))
+        {
+            switch (option.toUpperCase()) 
+            {
                 case "A":
                 p1.newEmployee();
                 break;
-                
+
                 case "I":
                 p1.printInfo();
                 break;
-                
+
                 case "D":
                 p1.removeEmployee();
                 break;
-                
+
                 case "S":
                 p1.calcWeeklySal();
                 break;
@@ -44,7 +46,7 @@ public class Client
                 case "W":
                 p1.endOfWeekProcessing();
                 break;
-                
+
                 default:
                 System.out.println("Invalid choice");
             }
@@ -66,6 +68,7 @@ public class Client
         System.out.println("I - Print information of an individual employee");
         System.out.println("D - Remove an employee from payroll");
         System.out.println("S - calculate and print the weekly pay of an employee");
+        System.out.println("T - print out list of top sellers");
         System.out.println("P - prints salary report");
         System.out.println("W - End of week processing");
         System.out.println();
@@ -79,5 +82,4 @@ public class Client
         return chosen;
     }
 
-    
 }

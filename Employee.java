@@ -98,8 +98,7 @@ public class Employee extends Payroll
 
     public boolean topSeller()
     {
-        boolean t = false;
-        return t;
+        return false;
     }
 
     public double calcWeeklySalary()
@@ -129,7 +128,7 @@ public class Employee extends Payroll
         int wks = 0;
         return wks;
     }
-
+    
     public void setYearSales(double amt) 
     {
     }

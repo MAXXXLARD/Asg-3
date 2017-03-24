@@ -238,17 +238,77 @@ public class Payroll
 
     public void printTopSellers()
     {
-
+        int count = 0;
+        System.out.println("Top sellers");
+        
+        while (count < Employees.size())
+        {
+            if (Employees.get(count).topSeller() == true)
+            {
+                System.out.println(Employees.get(count).getName() + " " + Employees.get(count).getEmpNo());
+            }
+            count++;
+        }
     }
 
     public void weeklySalaryReport()
     {
-
+        int count = 0;
+        String type = "";
+        
+        while (count < Employees.size())
+        {
+            if (Employees.get(count).getType() == 'S')
+            {
+                type = "Salary";
+            }
+            else if (Employees.get(count).getType() == 'H')
+            {
+                type = "Hourly";
+            }
+            else 
+            {
+                type = "Commission";
+            }
+            
+            System.out.println(Employees.get(count).getName() + "\t" + Employees.get(count).getEmpNo() + "\t" + type + "\t" + Employees.get(count).calcWeeklySalary());
+            count++;
+        }
     }
 
-    public void endOfWeekProcessing()
+    public void endOfWeekProcessing() throws IOException
     {
+        int count = 0;
+        int weeks = 0;
+        PrintWriter toFile = new PrintWriter("newWeek.txt");
+        
+        while (count < Employees.size())
+        {
+            Employees.get(count).setHrsWorked(0);
+            
+            Employees.get(count).setWeekSales(0.0);
+            
+            weeks = Employees.get(count).getNumWeeks();
+            Employees.get(count).setNumWeeks(weeks + 1);
+            
+            count++;
+        }
+        
+        count = 0;
+        
+        while(count < Employees.size())
+        {
+            toFile.print(Employees.get(count) + " ");
+            
+            if(count <= Employees.size())
+            {
+                toFile.println();
+            }
+            count++;
+        }
 
+        System.out.println("File has finished writing!");
+        toFile.close();
     }
 
     public void printInfo()

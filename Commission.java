@@ -93,10 +93,11 @@ public class Commission extends Employee
     {
         double weeklySal;
         
-        Scanner kb = new Scanner (System.in);
+        //Scanner kb = new Scanner (System.in);
         
-        System.out.println ("Please enter the weekly Sales of " + getName() + " ");
-        weekSales = kb.nextDouble();
+        //System.out.println ("Please enter the weekly Sales of " + getName() + " ");
+        //weekSales = kb.nextDouble();
+        weekSales = getWeekSales();
         
         weeklySal = baseSal + (commRate/100.0) * weekSales;
         
@@ -116,7 +117,6 @@ public class Commission extends Employee
             top = true;
         }
         return top;
-        
     }
     
     public String toString()
